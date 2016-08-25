@@ -45,6 +45,4 @@ RUN \
 
 ADD ["./docker-entrypoint.sh", "/root/"]
 
-VOLUME ["/var/www", "/usr/local/etc"]
-
 ENTRYPOINT ["sh", "-c", "${HOME}/docker-entrypoint.sh"]
